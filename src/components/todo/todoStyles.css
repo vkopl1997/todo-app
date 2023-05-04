@@ -1,0 +1,158 @@
+.todo-main{
+    width: 100%;
+    height: 100vh;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-box{
+    width: 50%;
+    height: 80%;
+    background-color: #FFF;
+}
+.todo-title{
+    width: 100%;
+    height: 60px;
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.input-main{
+    width: 100%;
+    height: 76px;
+    margin: 50px 0;
+    display: flex;
+}
+.input-main > input{
+    width: 80%;
+    height: 100%;
+    background-color: #E6EBFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    padding-left: 10px;
+}
+.input-main > button{
+    width: 20%;
+    height: 100%;
+    background-color: #5EFC8D;
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    cursor: pointer;
+}
+.todo{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+.individualTodo{
+    padding-left: 10px;
+}
+.edit-delete{
+    width: 16%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+}
+.edit{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/icons8-edit-30.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.delete{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/delete_forever_FILL0_wght400_GRAD0_opsz48.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.complete{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../assets/done_FILL0_wght400_GRAD0_opsz48\ \(1\).svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.delete-button-wrapper{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.delete-all{
+    width: 20%;
+    height: 40px;
+    background-color: #dc0f0f;
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 960px) {
+    .content-box{
+        width: 90%;
+    } 
+
+}
+@media only screen and (max-width: 650px) {
+    .content-box{
+        width: 98%;
+    } 
+    .todo-title{
+        font-size: 38px;
+    }
+    .input-main > button {
+        font-size: 28px;
+    }
+    .edit-delete{
+        width: 20%;
+    }
+    .todo{
+        font-size: 18px;
+    }
+    .delete-button-wrapper{
+        justify-content: center;
+    }
+    .delete-all{
+        width: 26%;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .todo-title{
+        font-size: 32px;
+    }
+    .input-main > button {
+        font-size: 22px;
+    }
+    .edit-delete{
+        width: 24%;
+    }
+    .todo{
+        font-size: 14px;
+    }
+    
+
+}

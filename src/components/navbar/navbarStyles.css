@@ -1,0 +1,140 @@
+.navbar-main{
+    width: 100%;
+    height: 96px;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    font-size: 36px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.person-info{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.person-img{
+    width: 68px;
+    height: 68px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+.logout{
+    width: 70px;
+    height: 40px;
+    background-color: #5EFC8D;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.burger-menu{
+    height: 50%;
+    width: 4rem;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+.burger-bar{
+    width: 4rem;
+    height: 0.5rem;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: #cdcfce;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: inherit;
+}
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(1.9em, 1.70em) ;
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.001);
+    opacity: 0;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-1.5em, 1.2em);
+    transition: ease-out 1s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+.burger-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.white-wrapper{
+    width: 90%;
+    height: 40vh;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.burger-name{
+    color: #000;
+    font-weight: 900;
+}
+.burgermenu-open{
+    height: 80px;
+    width: 80px;
+}
+.burger-img{
+    width: 120px;
+    height: 120px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .person-info{
+        width: 32%;
+    }
+
+}
+@media only screen and (max-width: 960px) {
+    .person-info{
+        width: 44%;
+    }
+    .burger-menu{
+        display: flex;
+    }
+    .person-info{
+        display: none;
+    }
+    
+
+}

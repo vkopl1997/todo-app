@@ -1,0 +1,81 @@
+.main-getStarted{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.icon-section{
+    width: 100%;
+    height: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.icon-div{
+    width: 95px;
+    height: 165px;
+    background: url('../../assets/Group\ 3.svg');
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    width: 100%;
+    height: 16%;
+    color: #FFF;
+    text-align: center;
+    font-size: 54px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 0 auto;
+}
+.start-button{
+    width: 100%;
+    height: 15vh;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-button > .link{
+    width: 300px;
+    height: 80px;
+    background-color: #5EFC8D;
+    font-size: 48px;
+    font-weight:500;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+@media only screen and (max-width: 960px) {
+    .text{
+        font-size: 32px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 650px) {
+    .text{
+        font-size: 26px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width: 490px) {
+    .text{
+        font-size: 22px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
